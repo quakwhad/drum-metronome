@@ -30,7 +30,8 @@ export async function loadKit(kit: KitName): Promise<void> {
 
   const urls: Record<string, string> = {};
   for (const track of TRACKS) {
-    urls[track.sampleKey] = `/samples/${kit}/${track.sampleKey}.mp3`;
+    const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+    urls[track.sampleKey] = `${base}/samples/${kit}/${track.sampleKey}.mp3`;
   }
 
   await new Promise<void>((resolve, reject) => {

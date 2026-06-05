@@ -437,5 +437,4 @@ window.addEventListener("resize", () => {
 });
 
 updateLoopSelects();
-updateStepSize();
 render(-1);
