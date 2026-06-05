@@ -1,0 +1,14 @@
+{
+  "name": "drum-metronome",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0"
+  },
+  "dependencies": {
+    "tone": "^15.0.4"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0",
+    "typescript": "^5.5.0"
+  }
+}
